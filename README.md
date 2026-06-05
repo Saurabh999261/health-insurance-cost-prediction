@@ -1,48 +1,124 @@
-# 🏥 Health Insurance Cost Prediction
+# 🏥 Health Insurance Cost Prediction using Machine Learning
 
 ## 📌 Project Overview
-Predicted health insurance medical charges using Machine Learning.
-Performed end-to-end Data Analysis on 1,300+ insurance records to
-identify key cost drivers and built multiple predictive models
-using Python and Scikit-learn.
+An end-to-end Machine Learning project to predict health insurance
+costs based on customer attributes such as age, BMI, smoking status,
+gender, location, and number of children. The project combines
+Exploratory Data Analysis (EDA), data preprocessing, and multiple
+regression models to identify key cost drivers and estimate insurance
+charges accurately.
 
-## 🎯 Objective
-To identify factors affecting health insurance costs and build a
-regression model that accurately predicts medical charges.
+## 💼 Business Problem
+Health insurance providers need to estimate future medical costs
+accurately in order to design pricing strategies and manage risk
+effectively. This project builds predictive models that estimate
+insurance charges using customer demographic and health-related
+information.
 
-## 📊 Dataset
+## 📊 Dataset Details
 - Records: 1,300+
-- Features: Age, BMI, Smoking Status, Gender,
-  Region, Number of Children, Charges
+- Target Variable: Health Insurance Price
 
-## 🔍 Key EDA Findings
-- Smoking status, age, and BMI showed strongest impact on charges
-- Smokers pay significantly higher medical charges than non-smokers
-- Higher BMI directly correlates with increased insurance costs
+| Feature | Description |
+|---|---|
+| Age | Customer age |
+| Gender | Male / Female |
+| BMI | Body Mass Index |
+| Children | Number of dependent children |
+| Smoking Status | Smoker / Non-smoker |
+| Location | Customer location |
 
 ## 🛠️ Tools & Technologies
-- Python | Pandas | NumPy
-- Matplotlib | Seaborn
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
 - Scikit-learn
+- Jupyter Notebook / Google Colab
 
-## ⚙️ Models Trained & Evaluated
-| Model | Evaluation Metrics |
+## 📈 Project Workflow
+
+### 1. Data Preprocessing
+- Loaded dataset from Excel file
+- Checked shape, info, and data types
+- Identified and handled null values using mean imputation
+- Removed duplicate records
+- Encoded categorical variables using Label Encoding
+  — Gender, Smoking Status, Location
+
+### 2. Exploratory Data Analysis — 8 Visualizations
+- Distribution of Health Insurance Prices — Histogram + KDE
+- Smoking Status vs Insurance Price — Box Plot
+- Age vs Insurance Price — Scatter Plot
+- BMI vs Insurance Price — Scatter Plot
+- Gender vs Insurance Price — Box Plot
+- Location vs Insurance Price — Box Plot
+- Children vs Insurance Price — Box Plot
+- Correlation Heatmap — all numeric features
+- Pair Plot — complete feature relationships
+
+### 3. Feature Engineering
+- Converted categorical variables to numerical using Label Encoding
+- Separated features (X) and target variable (y)
+- Train Test Split — 80% training, 20% testing (random_state=42)
+
+### 4. Machine Learning Models
+| Model | Type |
 |---|---|
-| Linear Regression | MAE, RMSE, R² |
-| Decision Tree Regressor | MAE, RMSE, R² |
-| Random Forest Regressor | MAE, RMSE, R² ✅ Best |
-| KNN Regressor | MAE, RMSE, R² |
+| Linear Regression | Baseline model |
+| Decision Tree Regressor | Tree based model |
+| Random Forest Regressor | Ensemble model |
+| KNN Regressor | Distance based model |
+
+### 5. Model Evaluation
+All 4 models evaluated using:
+
+| Metric | Purpose |
+|---|---|
+| MAE | Mean Absolute Error |
+| MSE | Mean Squared Error |
+| RMSE | Root Mean Squared Error |
+| R² Score | Model accuracy |
 
 ## 🏆 Best Model
-**Random Forest Regressor** achieved highest R² score and lowest
-prediction error — capturing complex relationships in data more
-effectively than all other models.
+**Random Forest Regressor** achieved the highest R² score and
+lowest prediction error — capturing complex relationships in
+data more effectively than all other models.
 
-## 📈 Project Steps
-1. Data loading and exploration
-2. Exploratory Data Analysis (EDA)
-3. Data preprocessing and cleaning
-4. Feature engineering
-5. Training 4 ML models
-6. Evaluation using MAE, RMSE and R² Score
-7. Selection of best performing model
+## 🔍 Key Insights
+- Smoking status is the strongest predictor of insurance cost
+- Higher BMI directly correlates with increased insurance charges
+- Age shows strong positive correlation with insurance price
+- Gender and location have relatively lower impact on charges
+- Random Forest outperformed all other regression models
+
+## 💡 Skills Demonstrated
+- Data Cleaning and Preprocessing
+- Exploratory Data Analysis (EDA)
+- Data Visualization
+- Feature Engineering
+- Label Encoding
+- Machine Learning — Regression Modeling
+- Model Evaluation and Comparison
+- Predictive Analytics
+
+## 📁 Project Structure
+```
+Health-Insurance-Cost-Prediction
+├── PYTHON_PROJECT_Health_Insurance_Cost_Prediction.ipynb
+├── README.md
+```
+
+## 🚀 Future Improvements
+- Hyperparameter Tuning using GridSearchCV
+- Cross Validation for better model reliability
+- Feature Selection and importance analysis
+- Advanced Ensemble Models — XGBoost, LightGBM
+- Model Deployment using Streamlit or Flask
+
+## 👤 Author
+**Saurabh Mekhe**
+Data Analyst | Python | SQL | Power BI | Machine Learning
+LinkedIn: www.linkedin.com/in/saurabh-mekhe-7b5aa6324
+GitHub: 
