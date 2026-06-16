@@ -92,6 +92,9 @@ data more effectively than all other models.
 - Age shows strong positive correlation with insurance price
 - Gender and location have relatively lower impact on charges
 - Random Forest outperformed all other regression models
+- KNN underperformed (low R² score) due to features not being
+  scaled — distance-based models like KNN are sensitive to
+  differing feature ranges, unlike tree-based or linear models
 
 ## 💡 Skills Demonstrated
 - Data Cleaning and Preprocessing
@@ -113,6 +116,8 @@ Health-Insurance-Cost-Prediction
 ## 🚀 Future Improvements
 - Hyperparameter Tuning using GridSearchCV
 - Cross Validation for better model reliability
+- Feature Scaling (StandardScaler) to improve distance-based
+  models like KNN
 - Feature Selection and importance analysis
 - Advanced Ensemble Models — XGBoost, LightGBM
 - Model Deployment using Streamlit or Flask
