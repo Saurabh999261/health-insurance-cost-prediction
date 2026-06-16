@@ -133,12 +133,9 @@ Health-Insurance-Cost-Prediction
 ```
 
 ## 🚀 Future Improvements
-- Hyperparameter Tuning using GridSearchCV
-- Cross Validation for better model reliability
-- Feature Scaling (StandardScaler) to improve distance-based
-  models like KNN
-- Advanced Ensemble Models — XGBoost, LightGBM
-- Model Deployment using Streamlit or Flask
+- Apply Feature Scaling to improve KNN model performance
+- Try the model on a larger dataset for better accuracy
+- Build a simple web app to take user input and predict insurance cost
 
 ## 👤 Author
 **Saurabh Mekhe**
