@@ -86,6 +86,22 @@ All 4 models evaluated using:
 lowest prediction error — capturing complex relationships in
 data more effectively than all other models.
 
+```
+Random Forest Regressor:
+R² Score : 0.875
+MAE      : 2749.36
+RMSE     : 4793.46
+```
+
+### Model Comparison
+
+| Model | R² Score | MAE | RMSE |
+|---|---|---|---|
+| Linear Regression | 0.800 | 4259.77 | 6056.83 |
+| Decision Tree | 0.765 | 3249.59 | 6575.92 |
+| **Random Forest** | **0.875** | **2749.36** | **4793.46** |
+| KNN | 0.062 | 8906.65 | 13130.07 |
+
 ## 🔍 Key Insights
 - Smoking status is the strongest predictor of insurance cost
 - Higher BMI directly correlates with increased insurance charges
@@ -95,6 +111,9 @@ data more effectively than all other models.
 - KNN underperformed (low R² score) due to features not being
   scaled — distance-based models like KNN are sensitive to
   differing feature ranges, unlike tree-based or linear models
+- Feature Importance analysis (from Random Forest) confirmed
+  Smoking Status, Age, and BMI as the most influential variables
+  in predicting insurance price
 
 ## 💡 Skills Demonstrated
 - Data Cleaning and Preprocessing
@@ -118,7 +137,6 @@ Health-Insurance-Cost-Prediction
 - Cross Validation for better model reliability
 - Feature Scaling (StandardScaler) to improve distance-based
   models like KNN
-- Feature Selection and importance analysis
 - Advanced Ensemble Models — XGBoost, LightGBM
 - Model Deployment using Streamlit or Flask
 
