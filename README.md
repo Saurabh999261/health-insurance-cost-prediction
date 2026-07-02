@@ -181,10 +181,10 @@ Health-Insurance-Cost-Prediction
 
 ## 🚀 Future Improvements
 
-- Apply Feature Scaling to improve KNN model performance.
-- Experiment with advanced ensemble models such as XGBoost and Gradient Boosting.
-- Use a larger dataset to improve model generalization.
-- Build a Streamlit web application for real-time insurance cost prediction.
+- Collect a larger dataset to improve model performance and generalization.
+- Perform additional feature engineering to explore new factors affecting insurance costs.
+- Compare the model performance using different train-test split ratios.
+- Build a simple user interface to allow users to predict insurance charges more easily.
 
 ---
 
