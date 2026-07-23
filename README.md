@@ -1,3 +1,7 @@
+
+
+---
+
 # 🏥 Health Insurance Cost Prediction using Machine Learning
 
 ## 📌 Project Overview
@@ -169,13 +173,13 @@ RMSE     : 4793.46
 
 ## 📁 Project Structure
 
-
+```
 Health-Insurance-Cost-Prediction
 │
 ├── Health_Insurance_Cost_Prediction.ipynb
 ├── README.md
 └── Dataset
-
+```
 
 ---
 
@@ -196,3 +200,4 @@ Data Analyst | SQL | Power BI | Python | Machine Learning
 - LinkedIn: https://www.linkedin.com/in/saurabh-mekhe-7b5aa6324
 - GitHub: https://github.com/Saurabh999261
 
+---
